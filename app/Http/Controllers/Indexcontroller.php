@@ -3,7 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Ofisnov;
+use App\Models\Qidanov;
+use App\Models\Teserrufatnov;
+use App\Models\Elektronnov;
+use App\Models\Dibceknov;
+use App\Models\Hediyyenov;
+use App\Models\Coffenov;
 class Indexcontroller extends Controller
 {
   public function index(){
@@ -19,7 +25,8 @@ class Indexcontroller extends Controller
   }
 
   public function ofis_lev(){
-    return view ('ofis_lev');
+    $data=Ofisnov::all();
+    return view ('ofis_lev',compact('data'));
   }
   public function qida_icki(){
     return view ('qida_icki');

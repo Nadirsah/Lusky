@@ -2,7 +2,7 @@
 @section('content');
 
 <div id="layoutSidenav_content">
-<form action="{{route('updateofisitem')}}" method="POST" enctype="multipart/form-data">
+<form action="{{route('updateqidaitem')}}" method="POST" enctype="multipart/form-data">
 @csrf
 
 <input type="hidden" name="id" value="{{$data['id']}}">

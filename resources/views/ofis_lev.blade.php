@@ -20,37 +20,12 @@
             <div class="office__filter__title">Alt kateqoriya</div>
             
             <div class="office__filter__category">
-            <input type="checkbox">Ağardıcı <br>
-            <input type="checkbox">Bıçaq <br>
-            <input type="checkbox">Bloknot <br>
-            <input type="checkbox">Çek və qaimə <br>
-            <input type="checkbox">Çərçivə <br>
-            <input type="checkbox">Delgəc <br>
-            <input type="checkbox">Dəftər <br>
-            <input type="checkbox">Fayl <br>
-            <input type="checkbox">Kağız <br>
-            <input type="checkbox">Kalkulyator <br>
-            <input type="checkbox">Karandaş <br>
-            <input type="checkbox">Karandaş yonan <br>
-            <input type="checkbox">Marker <br>
-            <input type="checkbox">Masaüstü dəstləri <br>
-            <input type="checkbox">Pozan <br>
-            <input type="checkbox">Pul Rezini <br>
-            <input type="checkbox">Qayçı <br>
-            <input type="checkbox">Qeyd Kağızı <br>
-            <input type="checkbox">Qısqac <br>
-            <input type="checkbox">Qovluq <br>
-            <input type="checkbox">Qələm <br>
-            <input type="checkbox">Skoç <br>
-            <input type="checkbox">Skrepka <br>
-            <input type="checkbox">Stepler və ehtiyatları <br> 
-            <input type="checkbox">Sənəd Dolabı <br>
-            <input type="checkbox">Sənəd Rəfi <br>
-            <input type="checkbox">Xətkeş <br>
-            <input type="checkbox">Yapışqan <br>
-            <input type="checkbox">Yazı Lövhəsi <br>
-            <input type="checkbox">Zibil Qabı <br>
-            <input type="checkbox">Zərf <br> 
+@foreach($data as $datas)
+
+            <input type="checkbox">{{$datas->basliq }}<br>
+
+            @endforeach
+            
             </div>
             <div class="filter__category__bottom">
             <hr>

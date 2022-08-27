@@ -17,37 +17,57 @@
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="{{route('kategory')}}">Kategoriya add</a>
                                     <a class="nav-link" href="{{route('ofisitem')}}">Ofis item</a>
+                                    <a class="nav-link" href="{{route('ofisnov')}}">Ofis nov</a>
                                     <a class="nav-link" href="{{route('qidaitem')}}">Qida item</a>
+                                    <a class="nav-link" href="{{route('qidanov')}}">Qida nov</a>
                                     <a class="nav-link" href="{{route('teserrufatitem')}}">Teserrufat item</a>
+                                    <a class="nav-link" href="{{route('teserrufatnov')}}">Teserrufat nov</a>
                                     <a class="nav-link" href="{{route('elektronitem')}}">Elektron item</a>
+                                    <a class="nav-link" href="{{route('elektronnov')}}">Elektron nov</a>
                                     <a class="nav-link" href="{{route('dibcekitem')}}">Dibcek item</a>
+                                    <a class="nav-link" href="{{route('dibceknov')}}">Dibcek nov</a>
                                     <a class="nav-link" href="{{route('hediyyeitem')}}">Hediyye item</a>
+                                    <a class="nav-link" href="{{route('hediyyenov')}}">Hediyye nov</a>
                                     <a class="nav-link" href="{{route('coffeitem')}}">Coffe item</a>
+                                    <a class="nav-link" href="{{route('coffenov')}}">Coffe nov</a>
                                     
                                 </nav>
                             </div>
                             <!--  -->
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Layouts
+                                Haqqimizda
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                    <a class="nav-link" href="{{route('haqqimizda')}}">Haqqimizda</a>
+                                   
                                 </nav>
                             </div>
                             <!--  -->
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts3" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Layouts
+                                Elaqe
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                    <a class="nav-link" href="{{route('elaqe')}}">Elaqe</a>
+                                   
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts4" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Sertler
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts4" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="{{route('catdirilma')}}">Catdirilma</a>
+                                    <a class="nav-link" href="{{route('geri_qaytarma')}}">Qaytarilma</a>
+                                   
                                 </nav>
                             </div>
                            
