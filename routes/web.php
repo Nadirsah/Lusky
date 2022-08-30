@@ -72,7 +72,7 @@ Route::get("deletekategory/{id}",[Admincontroller::class,"deletekategory"]);
 Route::get("ofisitem",[Admincontroller::class,"ofisitem"])->name('ofisitem');
 Route::post("sofisitem",[Admincontroller::class,"Storeofisitem"])->name('Sofisitem');
 Route::get("Editofisitem/{id}",[Admincontroller::class,"editofisitem"]);
-Route::post("updateofisitem",[Admincontroller::class,"updateofisitem"])->name('updateofisitem');
+Route::put("updateofisitem/{id}",[Admincontroller::class,"updateofisitem"])->name('updateofisitem');
 Route::get("deleteofisitem/{id}",[Admincontroller::class,"deleteofisitem"]);
 
 //ofisnov

@@ -128,21 +128,27 @@ class Admincontroller extends Controller
             // }
         
             public function editofisitem($id){
-             //$data=Ofisitem::find($id);
+              //$data=Ofisitem::find($id);
              $kate=Kategory::all();
              $item=Items::find($id);
                 return view('admin.editofisitem',compact('item','kate'));
             }
         
-            public function updateofisitem(Request $req ){
-                $product=Kategory::findOrFail($req->category_id)
-                ->items()->first();
-                   $product->basliq=$req->basliq;
-                    $product->update($req->all());
+            public function updateofisitem(Request $request,$id){
+             
+                $product=Items::findOrFail($id);
+                $product->basliq=$request->basliq;
+                $product->category_id = $request->category_id;
+                    $product->update();
+
+                // dd($request->all());
+                // $item = Items::where()
                     
                 // $category=Kategory::findOrFail($req->category_id);
-                // $category->items()->where('id',$category_id)->update([
-                //     'basliq'=>$req->basliq
+                // $category->items()->update([
+                //     'basliq'=>$req->basliq,
+                    
+                    
                 // ]);
                 return redirect("ofisitem");
             }
@@ -166,7 +172,7 @@ class Admincontroller extends Controller
 
 
             public function deleteofisitem($id){
-                $data=Ofisitem::find($id);
+                $data=Items::find($id);
                 $data->delete();
                 return redirect("ofisitem");
                     }
