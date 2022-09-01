@@ -9,15 +9,20 @@ class Items extends Model
 {
     use HasFactory;
 
-    protected $table="items";
+    protected $table = 'items';
 
-    protected $fillable=[
-        "category_id",
-        "basliq"
+    protected $fillable = [
+        'category_id',
+        'basliq',
     ];
 
-     public function kategory(){
+    public function kategory()
+    {
+        return $this->belongsTo("App\Models\Kategory", 'category_id', 'id');
+    }
 
-        return $this->belongsTo("App\Models\Kategory","category_id",'id');
+ public function products()
+ {
+     return $this->hasMany("App\Models\Product", 'items_id', 'id');
  }
 }

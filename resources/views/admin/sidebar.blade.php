@@ -16,9 +16,9 @@
                             <div class="collapse" id="collapseLayouts1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="{{route('kategory')}}">Kategoriya add</a>
-                                    <a class="nav-link" href="{{route('ofisitem')}}">Ofis item</a>
+                                    <a class="nav-link" href="{{route('ofisitem')}}">Alt kategoriya</a>
                                     <a class="nav-link" href="{{route('ofisnov')}}">Ofis nov</a>
-                                    <a class="nav-link" href="{{route('qidaitem')}}">Qida item</a>
+                                    <a class="nav-link" href="{{route('qidaitem')}}">Mehsullar</a>
                                     <a class="nav-link" href="{{route('qidanov')}}">Qida nov</a>
                                     <a class="nav-link" href="{{route('teserrufatitem')}}">Teserrufat item</a>
                                     <a class="nav-link" href="{{route('teserrufatnov')}}">Teserrufat nov</a>
